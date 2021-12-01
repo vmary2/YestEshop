@@ -1,0 +1,1892 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yest:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:al="http://eclipse.org/graphiti/mm/algorithms" xmlns:pi="http://eclipse.org/graphiti/mm/pictograms" xmlns:yest="http://www.smartesting.com/yest/metamodel" name="Assurance auto-JavaSelenium-KDT" id="9Msmwccl8uJksdqMn9S9LRHAL6OxU9PR">
+  <metadata key="#integerLowerBound" value="-32767"/>
+  <metadata key="#integerUpperBound" value="32767"/>
+  <metadata key="ProjectVersion" value="10"/>
+  <metadata key="ApplicationVersion" value="3.0.0"/>
+  <testElements xsi:type="yest:Workflow" id="lunup76foXOixhU4KJ273RYID5vM5Sea" name="Parcours">
+    <flowElements xsi:type="yest:StartPoint" id="56kiVfmx9YffjoiFsuA3Wqa6PPbn8KML" name="L'utilisateur arrive sur le site" outgoings="BHB3R6YpT0Im8nn7iEmwm6q3tyzWk4Un">
+      <table>
+        <columns xsi:type="yest:CriterionColumn" id="hitXqsBurbGENwgJmKDlf2urTpIExnZ0" criterionType="#objective"/>
+        <decisions id="bYRcVGNjxSdlo1DERYfvd0mePVV34MH4">
+          <cells key="hitXqsBurbGENwgJmKDlf2urTpIExnZ0">
+            <value xsi:type="yest:StringCell" value="Devis"/>
+          </cells>
+        </decisions>
+      </table>
+    </flowElements>
+    <flowElements xsi:type="yest:Task" id="qnNoqcb29JPGOq120F38LJALQguFzxzh" name="Saisir les caractéristiques du véhicule" incomings="BHB3R6YpT0Im8nn7iEmwm6q3tyzWk4Un" outgoings="pF1jiQbhNTTeFzuMGp3BGQxIz4d4kZG1">
+      <table>
+        <columns xsi:type="yest:DataColumn" id="6qoAsbI29S7UHmbL8LwUzkMpz6VLGlvP" data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY"/>
+        <columns xsi:type="yest:DataColumn" id="QLQehisfS3kmUCLiFVh1iVF3n7eI008S" data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ"/>
+        <columns xsi:type="yest:OperationColumn" id="Hhi2PpDEIQvI2kDzlMgeGUbvoWHaDAat"/>
+        <columns xsi:type="yest:CriterionColumn" id="sga6f318KCOSW9xN14TX00AOlee0R2Iz" criterionType="#objective"/>
+        <decisions id="w7Y4PKbHT4AcAY7Dg0R9s6BMeHW1xOz1">
+          <cells key="6qoAsbI29S7UHmbL8LwUzkMpz6VLGlvP">
+            <value xsi:type="yest:StringCell" value=">= 10 ans"/>
+          </cells>
+          <cells key="QLQehisfS3kmUCLiFVh1iVF3n7eI008S">
+            <value xsi:type="yest:StringCell" value="non trouvé"/>
+          </cells>
+          <cells key="Hhi2PpDEIQvI2kDzlMgeGUbvoWHaDAat">
+            <value xsi:type="yest:OperationCell">
+              <operations reference="9tiyIVSckoFtQIEKIe5U4iaMbhmiNvLs"/>
+            </value>
+          </cells>
+          <cells key="sga6f318KCOSW9xN14TX00AOlee0R2Iz">
+            <value xsi:type="yest:StringCell" value="Vieux non trouvé"/>
+          </cells>
+        </decisions>
+        <decisions id="gOBz6Df2GZSiy1veZAdFW7yotr9CELBC">
+          <cells key="6qoAsbI29S7UHmbL8LwUzkMpz6VLGlvP">
+            <value xsi:type="yest:StringCell" value="&lt; 10 ans"/>
+          </cells>
+          <cells key="QLQehisfS3kmUCLiFVh1iVF3n7eI008S">
+            <value xsi:type="yest:StringCell" value="trouvé"/>
+          </cells>
+          <cells key="Hhi2PpDEIQvI2kDzlMgeGUbvoWHaDAat">
+            <value xsi:type="yest:OperationCell">
+              <operations reference="9tiyIVSckoFtQIEKIe5U4iaMbhmiNvLs"/>
+            </value>
+          </cells>
+          <cells key="sga6f318KCOSW9xN14TX00AOlee0R2Iz">
+            <value xsi:type="yest:StringCell" value="Récent trouvé"/>
+          </cells>
+        </decisions>
+        <decisions id="QvJyXwvScf0qqa6DCnDE84a3MpzXVwpI">
+          <cells key="6qoAsbI29S7UHmbL8LwUzkMpz6VLGlvP">
+            <value xsi:type="yest:StringCell" value=">= 10 ans"/>
+          </cells>
+          <cells key="QLQehisfS3kmUCLiFVh1iVF3n7eI008S">
+            <value xsi:type="yest:StringCell" value="trouvé"/>
+          </cells>
+          <cells key="Hhi2PpDEIQvI2kDzlMgeGUbvoWHaDAat">
+            <value xsi:type="yest:OperationCell">
+              <operations reference="9tiyIVSckoFtQIEKIe5U4iaMbhmiNvLs"/>
+            </value>
+          </cells>
+          <cells key="sga6f318KCOSW9xN14TX00AOlee0R2Iz">
+            <value xsi:type="yest:StringCell" value="Vieux trouvé"/>
+          </cells>
+        </decisions>
+        <decisions id="wBJ40V4kVrefQEr5o9BfjtypkFP47ZBe">
+          <cells key="6qoAsbI29S7UHmbL8LwUzkMpz6VLGlvP">
+            <value xsi:type="yest:StringCell" value="Nouveau véhicule"/>
+          </cells>
+          <cells key="QLQehisfS3kmUCLiFVh1iVF3n7eI008S">
+            <value xsi:type="yest:StringCell" value="trouvé"/>
+          </cells>
+          <cells key="Hhi2PpDEIQvI2kDzlMgeGUbvoWHaDAat">
+            <value xsi:type="yest:OperationCell">
+              <operations reference="9tiyIVSckoFtQIEKIe5U4iaMbhmiNvLs"/>
+            </value>
+          </cells>
+          <cells key="sga6f318KCOSW9xN14TX00AOlee0R2Iz">
+            <value xsi:type="yest:StringCell" value="Nouveau trouvé"/>
+          </cells>
+        </decisions>
+      </table>
+    </flowElements>
+    <flowElements xsi:type="yest:SequenceFlow" id="BHB3R6YpT0Im8nn7iEmwm6q3tyzWk4Un" name="" target="qnNoqcb29JPGOq120F38LJALQguFzxzh" source="56kiVfmx9YffjoiFsuA3Wqa6PPbn8KML"/>
+    <flowElements xsi:type="yest:EndPoint" id="rUUP6e0RyAiCU2eRkuSL8VPk3YSuDMzA" name="" incomings="pF1jiQbhNTTeFzuMGp3BGQxIz4d4kZG1"/>
+    <flowElements xsi:type="yest:SequenceFlow" id="pF1jiQbhNTTeFzuMGp3BGQxIz4d4kZG1" name="" target="rUUP6e0RyAiCU2eRkuSL8VPk3YSuDMzA" source="qnNoqcb29JPGOq120F38LJALQguFzxzh"/>
+    <diagram visible="true" gridUnit="-1" diagramTypeId="com.smartesting.metamodel.WorkflowDiagram" name="Parcours" pictogramLinks="//@testElements.0/@diagram/@children.0/@link //@testElements.0/@diagram/@children.2/@link //@testElements.0/@diagram/@connections.0/@link //@testElements.0/@diagram/@children.3/@link //@testElements.0/@diagram/@connections.1/@link" version="0.16.0">
+      <graphicsAlgorithm xsi:type="al:Rectangle" background="//@testElements.0/@diagram/@colors.1" foreground="//@testElements.0/@diagram/@colors.0" lineWidth="1" transparency="0.0" width="1000" height="1000"/>
+      <children xsi:type="yest:StartPointShape" visible="true" active="true" flowNode="56kiVfmx9YffjoiFsuA3Wqa6PPbn8KML" labelShape="//@testElements.0/@diagram/@children.1">
+        <graphicsAlgorithm xsi:type="al:Ellipse" foreground="//@testElements.0/@diagram/@colors.2" lineWidth="2" transparency="0.0" width="31" height="31" x="187" y="72" style="//@testElements.0/@diagram/@styles.0"/>
+        <link businessObjects="56kiVfmx9YffjoiFsuA3Wqa6PPbn8KML"/>
+        <anchors xsi:type="pi:ChopboxAnchor" outgoingConnections="//@testElements.0/@diagram/@connections.0"/>
+      </children>
+      <children xsi:type="yest:LabelShape" visible="true" active="true" text="//@testElements.0/@diagram/@children.1/@children.0/@graphicsAlgorithm" labelled="//@testElements.0/@diagram/@children.0">
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="150" height="63" x="224" y="25"/>
+        <children xsi:type="pi:ContainerShape" visible="true">
+          <graphicsAlgorithm xsi:type="al:Text" foreground="//@testElements.0/@diagram/@colors.3" lineWidth="1" filled="false" transparency="0.0" width="150" height="63" font="//@testElements.0/@diagram/@fonts.0" horizontalAlignment="ALIGNMENT_CENTER" verticalAlignment="ALIGNMENT_TOP" value="L'utilisateur arrive sur&#xD;&#xA;le site"/>
+        </children>
+      </children>
+      <children xsi:type="yest:TaskShape" visible="true" active="true" text="//@testElements.0/@diagram/@children.2/@children.0/@graphicsAlgorithm" flowNode="qnNoqcb29JPGOq120F38LJALQguFzxzh">
+        <graphicsAlgorithm xsi:type="al:RoundedRectangle" foreground="//@testElements.0/@diagram/@colors.4" lineWidth="2" transparency="0.0" width="188" height="56" x="109" y="155" style="//@testElements.0/@diagram/@styles.1" cornerHeight="20" cornerWidth="20"/>
+        <link businessObjects="qnNoqcb29JPGOq120F38LJALQguFzxzh"/>
+        <anchors xsi:type="pi:ChopboxAnchor" outgoingConnections="//@testElements.0/@diagram/@connections.1" incomingConnections="//@testElements.0/@diagram/@connections.0"/>
+        <children xsi:type="pi:ContainerShape" visible="true">
+          <graphicsAlgorithm xsi:type="al:Text" foreground="//@testElements.0/@diagram/@colors.3" lineWidth="1" filled="false" transparency="0.0" width="174" height="42" x="7" y="7" font="//@testElements.0/@diagram/@fonts.0" horizontalAlignment="ALIGNMENT_CENTER" verticalAlignment="ALIGNMENT_TOP" value="Saisir les caractéristiques&#xD;&#xA;du véhicule"/>
+        </children>
+      </children>
+      <children xsi:type="yest:EndPointShape" visible="true" active="true" flowNode="rUUP6e0RyAiCU2eRkuSL8VPk3YSuDMzA">
+        <graphicsAlgorithm xsi:type="al:Ellipse" foreground="//@testElements.0/@diagram/@colors.5" lineWidth="4" transparency="0.0" width="31" height="31" x="373" y="167" style="//@testElements.0/@diagram/@styles.2"/>
+        <link businessObjects="rUUP6e0RyAiCU2eRkuSL8VPk3YSuDMzA"/>
+        <anchors xsi:type="pi:ChopboxAnchor" incomingConnections="//@testElements.0/@diagram/@connections.1"/>
+      </children>
+      <styles id="shape-bg-green-id">
+        <renderingStyle>
+          <adaptedGradientColoredAreas definedStyleId="shape-bg-green-id" gradientType="0">
+            <adaptedGradientColoredAreas styleAdaption="0">
+              <gradientColor>
+                <start locationType="LOCATION_TYPE_ABSOLUTE_START" locationValue="0">
+                  <color red="188" green="221" blue="186"/>
+                </start>
+                <end locationType="LOCATION_TYPE_ABSOLUTE_END" locationValue="0">
+                  <color red="255" green="255" blue="255"/>
+                </end>
+              </gradientColor>
+            </adaptedGradientColoredAreas>
+            <adaptedGradientColoredAreas styleAdaption="1">
+              <gradientColor>
+                <start locationType="LOCATION_TYPE_ABSOLUTE_START" locationValue="0">
+                  <color red="188" green="221" blue="186"/>
+                </start>
+                <end locationType="LOCATION_TYPE_ABSOLUTE_END" locationValue="0">
+                  <color red="188" green="221" blue="186"/>
+                </end>
+              </gradientColor>
+            </adaptedGradientColoredAreas>
+            <adaptedGradientColoredAreas styleAdaption="2">
+              <gradientColor>
+                <start locationType="LOCATION_TYPE_ABSOLUTE_START" locationValue="0">
+                  <color red="188" green="221" blue="186"/>
+                </start>
+                <end locationType="LOCATION_TYPE_ABSOLUTE_END" locationValue="0">
+                  <color red="188" green="221" blue="186"/>
+                </end>
+              </gradientColor>
+            </adaptedGradientColoredAreas>
+          </adaptedGradientColoredAreas>
+        </renderingStyle>
+      </styles>
+      <styles id="shape-bg-blue-id">
+        <renderingStyle>
+          <adaptedGradientColoredAreas definedStyleId="shape-bg-blue-id" gradientType="0">
+            <adaptedGradientColoredAreas styleAdaption="0">
+              <gradientColor>
+                <start locationType="LOCATION_TYPE_ABSOLUTE_START" locationValue="0">
+                  <color red="200" green="227" blue="238"/>
+                </start>
+                <end locationType="LOCATION_TYPE_ABSOLUTE_END" locationValue="0">
+                  <color red="255" green="255" blue="255"/>
+                </end>
+              </gradientColor>
+            </adaptedGradientColoredAreas>
+            <adaptedGradientColoredAreas styleAdaption="1">
+              <gradientColor>
+                <start locationType="LOCATION_TYPE_ABSOLUTE_START" locationValue="0">
+                  <color red="200" green="227" blue="238"/>
+                </start>
+                <end locationType="LOCATION_TYPE_ABSOLUTE_END" locationValue="0">
+                  <color red="200" green="227" blue="238"/>
+                </end>
+              </gradientColor>
+            </adaptedGradientColoredAreas>
+            <adaptedGradientColoredAreas styleAdaption="2">
+              <gradientColor>
+                <start locationType="LOCATION_TYPE_ABSOLUTE_START" locationValue="0">
+                  <color red="200" green="227" blue="238"/>
+                </start>
+                <end locationType="LOCATION_TYPE_ABSOLUTE_END" locationValue="0">
+                  <color red="200" green="227" blue="238"/>
+                </end>
+              </gradientColor>
+            </adaptedGradientColoredAreas>
+          </adaptedGradientColoredAreas>
+        </renderingStyle>
+      </styles>
+      <styles id="shape-bg-red-id">
+        <renderingStyle>
+          <adaptedGradientColoredAreas definedStyleId="shape-bg-red-id" gradientType="0">
+            <adaptedGradientColoredAreas styleAdaption="0">
+              <gradientColor>
+                <start locationType="LOCATION_TYPE_ABSOLUTE_START" locationValue="0">
+                  <color red="255" green="144" blue="158"/>
+                </start>
+                <end locationType="LOCATION_TYPE_ABSOLUTE_END" locationValue="0">
+                  <color red="255" green="255" blue="255"/>
+                </end>
+              </gradientColor>
+            </adaptedGradientColoredAreas>
+            <adaptedGradientColoredAreas styleAdaption="1">
+              <gradientColor>
+                <start locationType="LOCATION_TYPE_ABSOLUTE_START" locationValue="0">
+                  <color red="255" green="144" blue="158"/>
+                </start>
+                <end locationType="LOCATION_TYPE_ABSOLUTE_END" locationValue="0">
+                  <color red="255" green="144" blue="158"/>
+                </end>
+              </gradientColor>
+            </adaptedGradientColoredAreas>
+            <adaptedGradientColoredAreas styleAdaption="2">
+              <gradientColor>
+                <start locationType="LOCATION_TYPE_ABSOLUTE_START" locationValue="0">
+                  <color red="255" green="144" blue="158"/>
+                </start>
+                <end locationType="LOCATION_TYPE_ABSOLUTE_END" locationValue="0">
+                  <color red="255" green="144" blue="158"/>
+                </end>
+              </gradientColor>
+            </adaptedGradientColoredAreas>
+          </adaptedGradientColoredAreas>
+        </renderingStyle>
+      </styles>
+      <styles id="shape-bg-yellow-id">
+        <renderingStyle>
+          <adaptedGradientColoredAreas definedStyleId="shape-bg-yellow-id" gradientType="0">
+            <adaptedGradientColoredAreas styleAdaption="0">
+              <gradientColor>
+                <start locationType="LOCATION_TYPE_ABSOLUTE_START" locationValue="0">
+                  <color red="255" green="227" blue="73"/>
+                </start>
+                <end locationType="LOCATION_TYPE_ABSOLUTE_END" locationValue="0">
+                  <color red="255" green="255" blue="255"/>
+                </end>
+              </gradientColor>
+            </adaptedGradientColoredAreas>
+            <adaptedGradientColoredAreas styleAdaption="1">
+              <gradientColor>
+                <start locationType="LOCATION_TYPE_ABSOLUTE_START" locationValue="0">
+                  <color red="255" green="227" blue="73"/>
+                </start>
+                <end locationType="LOCATION_TYPE_ABSOLUTE_END" locationValue="0">
+                  <color red="255" green="227" blue="73"/>
+                </end>
+              </gradientColor>
+            </adaptedGradientColoredAreas>
+            <adaptedGradientColoredAreas styleAdaption="2">
+              <gradientColor>
+                <start locationType="LOCATION_TYPE_ABSOLUTE_START" locationValue="0">
+                  <color red="255" green="227" blue="73"/>
+                </start>
+                <end locationType="LOCATION_TYPE_ABSOLUTE_END" locationValue="0">
+                  <color red="255" green="227" blue="73"/>
+                </end>
+              </gradientColor>
+            </adaptedGradientColoredAreas>
+          </adaptedGradientColoredAreas>
+        </renderingStyle>
+      </styles>
+      <connections xsi:type="yest:SequenceFlowConnection" visible="true" active="true" start="//@testElements.0/@diagram/@children.0/@anchors.0" end="//@testElements.0/@diagram/@children.2/@anchors.0" sequenceFlow="BHB3R6YpT0Im8nn7iEmwm6q3tyzWk4Un">
+        <graphicsAlgorithm xsi:type="al:Polyline" foreground="//@testElements.0/@diagram/@colors.3" lineWidth="1" lineStyle="UNSPECIFIED"/>
+        <link businessObjects="BHB3R6YpT0Im8nn7iEmwm6q3tyzWk4Un"/>
+        <connectionDecorators visible="true" locationRelative="true" location="1.0">
+          <graphicsAlgorithm xsi:type="al:Polygon" background="//@testElements.0/@diagram/@colors.3" foreground="//@testElements.0/@diagram/@colors.3" lineWidth="3" filled="true" transparency="0.0">
+            <points x="-6" y="3"/>
+            <points x="1"/>
+            <points x="-6" y="-3"/>
+          </graphicsAlgorithm>
+        </connectionDecorators>
+      </connections>
+      <connections xsi:type="yest:SequenceFlowConnection" visible="true" active="true" start="//@testElements.0/@diagram/@children.2/@anchors.0" end="//@testElements.0/@diagram/@children.3/@anchors.0" sequenceFlow="pF1jiQbhNTTeFzuMGp3BGQxIz4d4kZG1">
+        <graphicsAlgorithm xsi:type="al:Polyline" foreground="//@testElements.0/@diagram/@colors.3" lineWidth="1" lineStyle="UNSPECIFIED"/>
+        <link businessObjects="pF1jiQbhNTTeFzuMGp3BGQxIz4d4kZG1"/>
+        <connectionDecorators visible="true" locationRelative="true" location="1.0">
+          <graphicsAlgorithm xsi:type="al:Polygon" background="//@testElements.0/@diagram/@colors.3" foreground="//@testElements.0/@diagram/@colors.3" lineWidth="3" filled="true" transparency="0.0">
+            <points x="-6" y="3"/>
+            <points x="1"/>
+            <points x="-6" y="-3"/>
+          </graphicsAlgorithm>
+        </connectionDecorators>
+      </connections>
+      <colors red="227" green="238" blue="249"/>
+      <colors red="255" green="255" blue="255"/>
+      <colors red="164" green="193" blue="162"/>
+      <colors red="51" green="51" blue="51"/>
+      <colors red="174" green="198" blue="207"/>
+      <colors red="239" green="126" blue="138"/>
+      <colors red="255" green="198" blue="64"/>
+      <fonts name="Segoe UI" size="9"/>
+    </diagram>
+  </testElements>
+  <testElements xsi:type="yest:TestOperation" id="9tiyIVSckoFtQIEKIe5U4iaMbhmiNvLs">
+    <highLevelStep>
+      <action>
+        <stepElements xsi:type="yest:StepText" content="Saisir les caractéristiques du véhicule pour année "/>
+        <stepElements xsi:type="yest:StepField" id="c9VEtwb7QzJzwjYnrL0EdqM3NOWFW5gu" data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY"/>
+        <stepElements xsi:type="yest:StepText" content=" et "/>
+        <stepElements xsi:type="yest:StepField" id="DwDVQQsg5LOO37gwo10ys3pnzGydtkM4" data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ"/>
+      </action>
+      <expectedResult/>
+    </highLevelStep>
+  </testElements>
+  <testElements xsi:type="yest:TestCampaign" id="N2kUH5fV12rnp9PAtlowlZub28N7yvnI" name="Campagne" folders="9Msmwccl8uJksdqMn9S9LRHAL6OxU9PR" dataSetCollections="f6kWgYflbjb6I1KndEHBhd3wW4f0YgWZ DWRxMQawS9FCuqeCFzXN0OhPifMdalTc"/>
+  <testElements xsi:type="yest:AutomationConfiguration" id="ekhM4yfewWL5vcx56YnMDhrTmuKN7yyR" campaign="N2kUH5fV12rnp9PAtlowlZub28N7yvnI" name="PublicationRobot Framework" publisherId="com.smartesting.publishers.robotframework.RobotframeworkEditor">
+    <parameters name="UseSeleniumKeywords" value="false"/>
+    <parameters name="destinationPath" value="#project#/Generated"/>
+    <parameters name="NewKeywordsList" value="OpenFirefox&#xA;Saisir marque&#x9;Marque&#xA;Saisir données véhicule&#x9;Saisir marque&#xA;Saisir annéeCirculation&#x9;Annee&#xA;Saisir carburant&#x9;Carburant&#xA;OpenFirefox2&#x9;Version&#x9;URL&#xA;FermerFirefox&#xA;Saisir modele&#x9;Modele"/>
+    <parameters name="RobotPathList" value="#project#\motClesAssuranceAuto.robot"/>
+    <operationScripts testOperation="9tiyIVSckoFtQIEKIe5U4iaMbhmiNvLs">
+      <after/>
+      <body>
+        <calls keywordId="Saisir marque" keywordName="Saisir marque" id="iLcEJQsNKkq3lnjATsEWpKac1HzoOLrJ">
+          <arguments parameterName="marque">
+            <parameterValue>
+              <stepElements xsi:type="yest:StepField" id="d2ABgEu0K8nDE4NU8DLjGsGGNMLAIXpJ" data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW"/>
+            </parameterValue>
+          </arguments>
+        </calls>
+        <calls keywordId="Saisir modele" keywordName="Saisir modele" id="mtOU9alBEbhBW4cYdpvRwo9uWgVT9ww4">
+          <arguments parameterName="modele">
+            <parameterValue>
+              <stepElements xsi:type="yest:StepField" id="h7d6gJ80EAJ7YhmMThzeDfjk2gXtu07k" data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2"/>
+            </parameterValue>
+          </arguments>
+        </calls>
+        <calls keywordId="Saisir carburant" keywordName="Saisir carburant" id="JxSLIAJL2AqlAweY20rv0aSY3gvZcpdC">
+          <arguments parameterName="carburant">
+            <parameterValue>
+              <stepElements xsi:type="yest:StepField" id="et5HBhcHzXUvlg8IwukWmgyknPrrRvfp" data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b"/>
+            </parameterValue>
+          </arguments>
+        </calls>
+        <calls keywordId="Saisir annéeCirculation" keywordName="Saisir annéeCirculation" id="W24nn5RO1lltPLiS65Y5mo8V4wnZ0Whp">
+          <arguments parameterName="Annee">
+            <parameterValue>
+              <stepElements xsi:type="yest:StepField" id="UupQgwQ6GzzrOLGPDQgq0EOSxhjMltOn" data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2"/>
+            </parameterValue>
+          </arguments>
+        </calls>
+      </body>
+      <before/>
+    </operationScripts>
+    <globalBefore>
+      <calls keywordId="OuvrirNavi" keywordName="OuvrirNavi" id="t4g5RWJ1wLXEajKQ70xQMF9yzpsvqeXY">
+        <arguments parameterName="Version">
+          <parameterValue>
+            <stepElements xsi:type="yest:StepText" content="firefox"/>
+          </parameterValue>
+        </arguments>
+        <arguments parameterName="URL">
+          <parameterValue>
+            <stepElements xsi:type="yest:StepText" content="https://demo-simulator.herokuapp.com"/>
+          </parameterValue>
+        </arguments>
+      </calls>
+    </globalBefore>
+    <globalAfter>
+      <calls keywordId="FermerFirefox" keywordName="FermerFirefox" id="tj9YTS3uipoNh4Hu6vJra9roK3A2gbCo"/>
+    </globalAfter>
+  </testElements>
+  <testElements xsi:type="yest:TestScenario" id="JWNBhw4mx9F1YbTa3Vp4wNdoxC5IXZ1o" name="Devis-Vieux non trouvé" associatedWorkflow="lunup76foXOixhU4KJ273RYID5vM5Sea">
+    <testActions id="nWUErdHKPXq9ZtjcjKwUDVFAQYo36PHT" operation="9tiyIVSckoFtQIEKIe5U4iaMbhmiNvLs">
+      <stepFieldValues referencedStepField="c9VEtwb7QzJzwjYnrL0EdqM3NOWFW5gu">
+        <value definition=">= 10 ans" id="RrK1rT9C0x4bkigX320OHePmcFdhSNzD"/>
+      </stepFieldValues>
+      <stepFieldValues referencedStepField="DwDVQQsg5LOO37gwo10ys3pnzGydtkM4">
+        <value definition="non trouvé" id="MHwSs8mUAdDULxeLEe8ZrgPsUXnMfC6y"/>
+      </stepFieldValues>
+    </testActions>
+    <dataSetCombinations testCampaign="N2kUH5fV12rnp9PAtlowlZub28N7yvnI">
+      <combinations dataSets="kzzayHY4p2SoZIX80Tlh9SeSDZfxzfGm OpdCT2J0YT371LChiE3s7uK3nfRqm2FM" id="nqanlQ4jVdvp3VwSZvU5XktF6CYUaCXZ"/>
+    </dataSetCombinations>
+  </testElements>
+  <testElements xsi:type="yest:TestScenario" id="CFmAPbRs2Wx7tg3RMjKdy3T8rut5tJCR" name="Devis-Récent trouvé" associatedWorkflow="lunup76foXOixhU4KJ273RYID5vM5Sea">
+    <testActions id="RCQihWYoEWdK6kazflyXO6KOPxqbJzXJ" operation="9tiyIVSckoFtQIEKIe5U4iaMbhmiNvLs">
+      <stepFieldValues referencedStepField="c9VEtwb7QzJzwjYnrL0EdqM3NOWFW5gu">
+        <value definition="&lt; 10 ans" id="mA8N67Xa9HanaFePapDZ44FVwqsgkd2o"/>
+      </stepFieldValues>
+      <stepFieldValues referencedStepField="DwDVQQsg5LOO37gwo10ys3pnzGydtkM4">
+        <value definition="trouvé" id="ywdpnCByXcadPQaNF9cqTZWizlmee7YV"/>
+      </stepFieldValues>
+    </testActions>
+    <dataSetCombinations testCampaign="N2kUH5fV12rnp9PAtlowlZub28N7yvnI">
+      <combinations dataSets="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq yqjnabrgkzk4XvGzdB0PYdFtadrVCdkK" id="wx6rtxLCxDFwUPuvuGC1B7P3nI1stwSH"/>
+      <combinations dataSets="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq YHERLtv4H7zhYMvS7igpVlJ1617sOpd3" id="atdhiZGimXkTcJcu3Tf40DFws4Aez6tK"/>
+      <combinations dataSets="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq QkdHp8vbBbRf2Mw3DeywdZmROqDT5gK9" id="8aiAqF4f0fhifLO2jk0pZZb2UHT4bRiZ"/>
+      <combinations dataSets="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq YZUn9KPtq3AYA1uKlxn6MwyPl6TJpUtG" id="i54VE4CkizuJi3N02XEHlabHlQe0AMrS"/>
+      <combinations dataSets="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq dCDlRsuR6k6duRyN3qOba1x2ZmH5SuXY" id="cW26w3FfYagg8sy9ML7Sw1XJmG0XvgEM"/>
+      <combinations dataSets="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq KHyDmQYxuo5olDA0RyQgCrOhZ05WbWgY" id="gL8XNKjQRpTq751UMvFT82uPg77cpYRm"/>
+      <combinations dataSets="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq LeSfJWprmxUKYmFUuka2y5EEtrOwGRjw" id="cl9flZHtbYxO0XpFp9TjhqHc3Wso2tSd"/>
+      <combinations dataSets="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq bdfmXDIKdMLAv4kOsa8czhNH0bIG8KGg" id="WVrR3LtyOIw4lTNDRvDEjT9Nmsdop3pX"/>
+      <combinations dataSets="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq YtZpPdo8s0NiKBSeRtGblzKkNGBudET7" id="3A4z3xzvTNHlRkBMQ1lCtDEZhpN9XQf8"/>
+      <combinations dataSets="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq 99xIpR0NAwRqcvtWauNJ0v9AD4OYxFrr" id="zHiAutDp3xpE41Djh8VtbNtwlZY55II8"/>
+      <combinations dataSets="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq kzDpBkJfwcGCCHNKyT9k0KOEjbgCqYrW" id="SJ7YUBu22wd4NMv8yGP0KH1jq9XvCLb9"/>
+      <combinations dataSets="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq ZwX5GYhB6qJtyMln9F4H3yTxKtDACnex" id="dUHJuieLUuIHM5Zt9tGH0zAtNSbpdfwD"/>
+      <combinations dataSets="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq PPp08xRm9IX3iAKZpvvnRPTeF8V95ylg" id="NDCqWN5h9LeCwixr5s8AYwbY4YCY3hPG"/>
+      <combinations dataSets="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq nBzolknN35jKAsinzZ5VH5XM03bGDYWy" id="BgSx94nxxV5gKZw5xvpaTCBUMwIAsWAA"/>
+      <combinations dataSets="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq aecMfQ1kEU7d3y95MFtMJ3WSvkFuhSCj" id="qYuEpK3CZ9XDxvdI35dU1RoSvNGYMLgc"/>
+      <combinations dataSets="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq QnMmAHqP2e96jQ0uXDfSmeESRNaEgq1A" id="P4Xe801AapZPB1ihCCHBJS2qqxeZ81Tp"/>
+      <combinations dataSets="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq CRRuTTEK5EgJhvuoSxFvtyT1GNqHlrhJ" id="InTjvkQJ7APRtFgtSVwmM1R4FSOO1JOy"/>
+      <combinations dataSets="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq KPOnYs6NgzRSDlGfSBRejtgZqdtl5B2m" id="CAaMfcNDOqCWM1jF9vsCu5cmAyxheKq2"/>
+      <combinations dataSets="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq IenrVVxrYWudEIx0zlWedaOrzq7zwOv6" id="gGi1IYC3OLAT3E6xzojXQmOOt74e4amj"/>
+      <combinations dataSets="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq DtnVEXuNAgWW014prHKZvlRsdFG0RXTv" id="mSNmhHfjCKsoSLMYSdLFzPvsdhtpDQeA"/>
+      <combinations dataSets="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq R7mSuAVucdG8f5XHXN8psKeMXzdpETCZ" id="tbOGtt56erGLYMBIM4SF9sf3FRh589Gm"/>
+      <combinations dataSets="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq aPac0udAhm2DtLvfsVhBR0kNwAh9xIAk" id="huP97c0WIMY174Sxn1h09bpY3YgVaLxE"/>
+      <combinations dataSets="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq 9Snd1rdv8X9ACFKYexbZdi4zhkbbe1LK" id="q40j710yAszPw3mOrcaH8ZWdXpZBCZdz"/>
+      <combinations dataSets="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq aCQBjTmxrf74VWVyOqDPzQ14W3wvfpz7" id="iuOSs2sgzWrZyeVRqdFI4aqhwAbTdiv3"/>
+      <combinations dataSets="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq y6D2YWSnxAklrZt5hLLTrwk5Ig7Ljd5G" id="mjXmP7PeyUENa3iMD5t4CIb2H2TkynPz"/>
+      <combinations dataSets="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq tMqFjwbJbRPwWIVyes7jHunzgUEYX2GI" id="HInpEGeAXXoMzmsL1aSCrhlorg6shHUP"/>
+      <combinations dataSets="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq Ynn9MDgeopLrZh5rZtDLGdRsw8odV3jw" id="03asj6fhRZcwUmoghUPxtprM0CWGVx0p"/>
+      <combinations dataSets="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq 9g23VopXm5YDMJczG05XIYlAYTHFiSfB" id="wjC9yI55jEPmH7Yq5nFKYQuIhmY0powu"/>
+      <combinations dataSets="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh yqjnabrgkzk4XvGzdB0PYdFtadrVCdkK" id="pD1BdKJYoJh8lN8UsoVwM7xYd58VZroa"/>
+      <combinations dataSets="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh YHERLtv4H7zhYMvS7igpVlJ1617sOpd3" id="k6k9CLm496KJOd37mJ7146aPuWT5OJPq"/>
+      <combinations dataSets="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh QkdHp8vbBbRf2Mw3DeywdZmROqDT5gK9" id="GCigXA73SpWiXmydEOTyOtkGzLwn7duX"/>
+      <combinations dataSets="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh YZUn9KPtq3AYA1uKlxn6MwyPl6TJpUtG" id="n0p23Qi4iplkrLsbsJbPVkQLL50uLfsi"/>
+      <combinations dataSets="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh dCDlRsuR6k6duRyN3qOba1x2ZmH5SuXY" id="xzP5udcgbIGQ3IdWUv4fKiBgPGS9Q94f"/>
+      <combinations dataSets="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh KHyDmQYxuo5olDA0RyQgCrOhZ05WbWgY" id="Rce3Yju9bSI5X8djYZuWBQLjNetO0idJ"/>
+      <combinations dataSets="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh LeSfJWprmxUKYmFUuka2y5EEtrOwGRjw" id="RXuvD7JnpUcmPMzGC0AWaxeKHnIxk18S"/>
+      <combinations dataSets="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh bdfmXDIKdMLAv4kOsa8czhNH0bIG8KGg" id="9GU3qmXGhAG0g47dnLGooclW9RWRYJB1"/>
+      <combinations dataSets="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh YtZpPdo8s0NiKBSeRtGblzKkNGBudET7" id="2ei8zLr4RkjT0B8zWqMaYGi3q6uVQeEc"/>
+      <combinations dataSets="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh 99xIpR0NAwRqcvtWauNJ0v9AD4OYxFrr" id="NTwWS5LQSUUQ6GrsGR03b6CFgFIfdZQV"/>
+      <combinations dataSets="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh kzDpBkJfwcGCCHNKyT9k0KOEjbgCqYrW" id="jvKI4pJCopR6Clv96LclNycwBJRZ3xqI"/>
+      <combinations dataSets="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh ZwX5GYhB6qJtyMln9F4H3yTxKtDACnex" id="BeUOusc0QlD6Z9vrAZKIzyWqtZArRvWb"/>
+      <combinations dataSets="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh PPp08xRm9IX3iAKZpvvnRPTeF8V95ylg" id="O9bls7JWY9yrgcWPw4AZF4Ay3wNiD14p"/>
+      <combinations dataSets="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh nBzolknN35jKAsinzZ5VH5XM03bGDYWy" id="magbiL18f741KRNPQUmTVx6l81KSMpGY"/>
+      <combinations dataSets="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh aecMfQ1kEU7d3y95MFtMJ3WSvkFuhSCj" id="dTF8cqdViZXlJejH81jKFmWO79ORaprC"/>
+      <combinations dataSets="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh QnMmAHqP2e96jQ0uXDfSmeESRNaEgq1A" id="xuxPrlc1B3ZD5kfrI2Iw0xC8P8Ngriof"/>
+      <combinations dataSets="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh CRRuTTEK5EgJhvuoSxFvtyT1GNqHlrhJ" id="0jMUFc2eQkMy9NfVt9DNiK5kLWK1OarQ"/>
+      <combinations dataSets="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh KPOnYs6NgzRSDlGfSBRejtgZqdtl5B2m" id="EFjXThh2CHxiIp0be6dgfEWtCzD5GvQw"/>
+      <combinations dataSets="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh IenrVVxrYWudEIx0zlWedaOrzq7zwOv6" id="xJwUWNc8v7qMxV5EMT3WefBojxhzDTYv"/>
+      <combinations dataSets="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh DtnVEXuNAgWW014prHKZvlRsdFG0RXTv" id="7JJYwfbBiabJCsSSuEktezUQosb0YiUA"/>
+      <combinations dataSets="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh R7mSuAVucdG8f5XHXN8psKeMXzdpETCZ" id="mPijONmn1oIY5sz5isy8kCO83ex7WkFy"/>
+      <combinations dataSets="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh aPac0udAhm2DtLvfsVhBR0kNwAh9xIAk" id="MObWk8QqufPNuOFB3MV1fsrA0xF3kQhB"/>
+      <combinations dataSets="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh 9Snd1rdv8X9ACFKYexbZdi4zhkbbe1LK" id="a0A8OZDerHshCZLZYXSJyGTlZp5oSVqw"/>
+      <combinations dataSets="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh aCQBjTmxrf74VWVyOqDPzQ14W3wvfpz7" id="kcfcJGcJoOyBfsrzMxqDDFRALMnjG6j2"/>
+      <combinations dataSets="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh y6D2YWSnxAklrZt5hLLTrwk5Ig7Ljd5G" id="FRNnMPAkxRBMGWJSDFSQO7BwPypxn9ti"/>
+      <combinations dataSets="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh tMqFjwbJbRPwWIVyes7jHunzgUEYX2GI" id="C5e1dUKTkgLRTfMX9bDjtJrSTA1Azb76"/>
+      <combinations dataSets="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh Ynn9MDgeopLrZh5rZtDLGdRsw8odV3jw" id="LqIM7x3AkCwWKLmiyCqL2GsRlfpUnkrH"/>
+      <combinations dataSets="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh 9g23VopXm5YDMJczG05XIYlAYTHFiSfB" id="JWlh353NwsqH0my5b4qs7UVIgU7v8al7"/>
+    </dataSetCombinations>
+  </testElements>
+  <testElements xsi:type="yest:TestScenario" id="soKCdKyHWAQ03hTScaGDLMFqFyr9lQke" name="Devis-Vieux trouvé" associatedWorkflow="lunup76foXOixhU4KJ273RYID5vM5Sea">
+    <testActions id="qD1MbUn3yibWFwa8Rsyl6JdTOhTJnMzG" operation="9tiyIVSckoFtQIEKIe5U4iaMbhmiNvLs">
+      <stepFieldValues referencedStepField="c9VEtwb7QzJzwjYnrL0EdqM3NOWFW5gu">
+        <value definition=">= 10 ans" id="CKhNty1WoxvRIfFidr6ILsZdLY0QZnfx"/>
+      </stepFieldValues>
+      <stepFieldValues referencedStepField="DwDVQQsg5LOO37gwo10ys3pnzGydtkM4">
+        <value definition="trouvé" id="tvFpxVW3SBkeEGBw98HJ0ug1RR7DTWtN"/>
+      </stepFieldValues>
+    </testActions>
+    <dataSetCombinations testCampaign="N2kUH5fV12rnp9PAtlowlZub28N7yvnI">
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f tnsVO7vxualYHTb2vIZBCzTID4xXSBOt" id="ohGDFxKeDNNV4sra2kkGuVKbUcnAYdrG"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f vSUvyDVYuWB5RAA2hpnsPSnhMJdTQuU4" id="MIcZuD3uqeZpp20iT1xmZ8I5GGfs6ycI"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f 1A0g5pgjhE9BkHlYlQKvuNtONNt0NjWL" id="Afv1vQuebXJPNbIEskB8EoikXPJbtWY1"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f edo59bI9931aSXX9VCbWQ2RC1GbMT42I" id="tDxa0u0NrMRiltD0JDEHIGWgMXgL4OTe"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f rjdfDPkxroELfVMwdAy3ZEzpziU4INGj" id="PjsSjTds4b7OlG6Bi93RiZ4N5WEB7cII"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f Pv5ievoZzQJ9wRzFpejYWNvt13SNZoP7" id="xSjGqFvFVfgtd9rLfvf6IiNaFw2RPj7i"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f sg9pmh6yYBw1LL4PoVj6vn2qL7Mp9hYw" id="cRDV8LVDp74lGOX5wonTBPpUzSAqDwdI"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f Pf8kOawyZ64MdvWyhDaXuh9plnv5QEI8" id="01NkPI2i0lCO0VZHHdXkM63dIZcLEGfC"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f ilts4kdmVzS11QZdmKlpM2jki3Nh24ak" id="u1yLVi7o108cna6YeP1IzRa6GFEmwBnG"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f rO6KgjJGMi8FRv0ZVHjRAjCJTYV7jdu7" id="2m5DsXEgtUSgsulYqdFzvk6XvAvrLvGJ"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f FlMQmHkwXYMiDNJeWI345chWcZfR9PSj" id="wumOSj2pjn751lB0HqcUyEbmYr3Pt5no"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f CBRBcdIkffu70U35JCAW8CuLcQU3vsrC" id="9Sxut8aEI7geamT9v7pJENgZ3vyeq25J"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f Puff303Kht1C1yqiCc4ZpDa0F4XJzQSZ" id="XKPLtJPtVW2wVJSIzVHekk04kAD5XcGk"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f AX12iq78bJ6OzIart9DyCjvDaMncwPWO" id="dUXyruaCPRxEbbVREuoskHa7BWbmWvXF"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f rJPwH3hSG9nkE5N7mVkNbWY3HsRAApfA" id="GU9RHXFYTLyvvQmRsF3l9nOZEmOrIFbo"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f w6wVaglyYEa8gFHJhC3aKhF4rkupl7pT" id="DEgxuUrIll5ulFIuzTmn6i55IbwWvqW9"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f EC1oZgsGAfSZuY3Rskp0dWpaMFUQ41cy" id="UeI163Z4U1ZeWkx36v8hhrdwdZecmgsC"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f e2gx3GDfDJheh7Y865QCT60f201p75Iy" id="1LoSwf7dwvBudHKoV3H8BB1HUsiIRpbs"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f P60PHmSOIYi4NjNyxTODUO7QbrkOyooS" id="piAEUFhQJVX6RBVIQVqeaWGoq4J4KvrL"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f RlxD4ya9t4CqfDM36wGlaySlRhVxPMfw" id="ZMVyjUhcusyz1vi83OQMVytBvqRP28dO"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f ZgnECN6E0fN3Te9n7AdYiPpXzhC9LmW3" id="1UyNYNJ6ihjMG3FDInLLQemt5Ss0hL5w"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f 2cdYkPdIemvAWKt6e9HXekkLGvOou6Bn" id="6XczM6XRXW95jmsghjvNMX0OL4ZJfUYg"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f e7iooh4GdUUl4fYKClijy3YQLoltxmMM" id="oPS7jr6DTWkVENc7uVxfzBLH90MTzKQb"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f p9shmLZfWO8HmVVFRtbXQLpDYVlHWKzz" id="N06bHPJhV26q8rKmTdTRf6XyhKpHNurb"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f 00XIeI5OyDEvfoH5HyOT1qxiHj7o63rZ" id="5lz1lrheb8HLYJ3mmxZGyT5R9t4O2eCy"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f we2YzFBWAojdNMbWEB29NGSE0uUDyjCQ" id="JsYu6c9IuYxbUkx6LzJn9WnBxJrzrApN"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f ITJh927HjoxcSwyRrZC5Vomc9kpNbE9n" id="GDMFBV0QpzDv8yfP1M4I46mwp98KteIJ"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f tRphDvvI54N0L1MejF1DaoTs1Xpp3e71" id="U83vV2UHzfzy74QnL4YQ1aEeDNUCy8jO"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f NrCZEGtXUmHslGrC9mfZ5iNKMMKuhDBu" id="2eesBOrmDDYJyhu5mKnjJ4dj9xinoFjv"/>
+      <combinations dataSets="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f rBO8Ztd1PeiZdmCRLiiffM0I80KS1siS" id="sMy12LRN79NIXc50KtiuXjcbESuwJpib"/>
+    </dataSetCombinations>
+  </testElements>
+  <testElements xsi:type="yest:TestScenario" id="KCBIIfaAGVxAkdWPCEMToITLwQneOAzy" name="Devis-Nouveau trouvé" associatedWorkflow="lunup76foXOixhU4KJ273RYID5vM5Sea">
+    <testActions id="anOYNQoJ9ZID3StRSPbeA190HLZSJU4V" operation="9tiyIVSckoFtQIEKIe5U4iaMbhmiNvLs">
+      <stepFieldValues referencedStepField="c9VEtwb7QzJzwjYnrL0EdqM3NOWFW5gu">
+        <value definition="Nouveau véhicule" id="weuplFujWaEwdrUHyqKEp1KwTwoZBBbZ"/>
+      </stepFieldValues>
+      <stepFieldValues referencedStepField="DwDVQQsg5LOO37gwo10ys3pnzGydtkM4">
+        <value definition="trouvé" id="sHLe2kwjtwbpsnjFrbo3WkCaGzkzKTV3"/>
+      </stepFieldValues>
+    </testActions>
+    <dataSetCombinations testCampaign="N2kUH5fV12rnp9PAtlowlZub28N7yvnI">
+      <combinations dataSets="GTh2YscpfGFdH8OUywboUV38cixKHpua XJxKURJ0MYXBFc8tvoT917wNNGtWUbAy" id="13jrrOljsp16YZW92kiYQcRYO6rKh0We"/>
+      <combinations dataSets="GTh2YscpfGFdH8OUywboUV38cixKHpua tH0vvYwAlngtt704Psd43hUn6ZH86d7V" id="7kXwLCbMg675zptJVqZso7DVN6ARl5As"/>
+      <combinations dataSets="GTh2YscpfGFdH8OUywboUV38cixKHpua RddI5Xj3hZ6nGEEiXwSUUwcbhk9jPEXG" id="K0ntmsoMrlwukiVlc61Nk6SXkFdUP0Zq"/>
+      <combinations dataSets="GTh2YscpfGFdH8OUywboUV38cixKHpua xuSyUhU5Yz6Vs6ehGRjKO60kewZJMLjO" id="qCGQ311gmEgt6xYCIC3Sd9IB3sKeN7Ho"/>
+      <combinations dataSets="GTh2YscpfGFdH8OUywboUV38cixKHpua eLG1Nz6VYuG8KyZseXDd3dZwQO2KFsKu" id="UzP28fMeiJv7OBr8zibrAFdlNIBgyOZ8"/>
+      <combinations dataSets="GTh2YscpfGFdH8OUywboUV38cixKHpua sXXEm7EFAA1jH36ccZexayHPh3WwiLkK" id="2rDXzEY6HC5YEBMsUY1vWKXDJLEjjqRg"/>
+      <combinations dataSets="GTh2YscpfGFdH8OUywboUV38cixKHpua WPbw7dXJDkhTQO3BdDEApec5GdU0NX1A" id="mRnUXvRnMRj8mUv9gpuqLu9HAiW10HyJ"/>
+      <combinations dataSets="GTh2YscpfGFdH8OUywboUV38cixKHpua 4ME6km3GJEhEV27dMHaHm2vxQTcsiZxx" id="U4wFG9nOzfPs4K2edO98Aw1bBwZ3JHSt"/>
+      <combinations dataSets="GTh2YscpfGFdH8OUywboUV38cixKHpua iBQqqISHw2Qn1hrM9Mmqs8GeZ4oPspnj" id="7ERJShSt7t1JMNR8DSOp2bZERNMX3ZgH"/>
+      <combinations dataSets="GTh2YscpfGFdH8OUywboUV38cixKHpua M6LCEHJ2K4KkKylMJ8Bdh26g75YxhdDP" id="nJEPgGcjj4VWPyS7SxH9dJM8CF0HjSHG"/>
+      <combinations dataSets="GTh2YscpfGFdH8OUywboUV38cixKHpua W7lg6z1KPguDsiiLx0nLXJk6U0YGikUx" id="wxY7ICTYGadmdfg3lEwfO6HGq99fRLXd"/>
+      <combinations dataSets="GTh2YscpfGFdH8OUywboUV38cixKHpua oDy6GCqu5djj2yzUa4fVROynbDBrFWLy" id="T2g0mvao9mu763t7KAXxhXJWGP4B2oJ6"/>
+      <combinations dataSets="GTh2YscpfGFdH8OUywboUV38cixKHpua bJrWdoS0UduyFYrvV5LF8gxBBy4V3d6Y" id="yw5Grsff1O5Xemr9mxGFciPzbANsCpzy"/>
+      <combinations dataSets="GTh2YscpfGFdH8OUywboUV38cixKHpua 9yc9rZU0dlblYF5bX9ACFWSgxRPekzfg" id="K9CuUry6y3XbhakdAI65lmsL6bTi98JF"/>
+      <combinations dataSets="GTh2YscpfGFdH8OUywboUV38cixKHpua NEPpKNhnzZLMsuLODkOKaD6AsxxmchNj" id="ky9zCgGyl45Giurzywx4H3aHtVmuMHev"/>
+      <combinations dataSets="GTh2YscpfGFdH8OUywboUV38cixKHpua 3rBoBEt5e9WMtoMkANWYOXPW8ZJtOPJp" id="XP96HdRYZV7hoyzLwcof1KEJujehffCG"/>
+    </dataSetCombinations>
+  </testElements>
+  <designDataDictionary id="QpbyktzKSyoE8oT1qHQXO97TiyNcopax" name="#designDataDictionary">
+    <datas xsi:type="yest:DesignData" name="TypeAssurance" id="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS"/>
+    <datas xsi:type="yest:DesignData" name="annéeMiseEnCirculation" id="1VIt3s7QHjdyOpC7Ebn9xmbdvJ2nyHL7"/>
+    <subCategories xsi:type="yest:DesignDataCategory" id="r98sf6iD5Oi1NLjezmSOdV6ay6auLmXV" name="Conducteur">
+      <datas xsi:type="yest:DesignData" name="Conducteur_lieuRésidence" id="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0"/>
+      <datas xsi:type="yest:DesignData" name="Conducteur_permis" id="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z"/>
+      <datas xsi:type="yest:DesignData" name="Conducteur_bonusMalus" id="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp"/>
+    </subCategories>
+    <subCategories xsi:type="yest:DesignDataCategory" id="LJOPh2lFCrfG8fmBTX8kNV26Mc6XVlmK" name="Véhicule">
+      <datas xsi:type="yest:DesignData" name="Véhicule_AnnéeMiseEnCirculation" id="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY"/>
+      <datas xsi:type="yest:DesignData" name="Véhicule_Trouvé" id="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ"/>
+    </subCategories>
+  </designDataDictionary>
+  <implementationDataDictionary id="rAvgXBilENne6CMgosPdwdQec0yYjH2z" name="#implementationDataDictionary">
+    <subCategories xsi:type="yest:ImplementationDataCategory" id="ShDrLcADDKqRVcfWU5hYC8uNQzHn4QDi" name="Conducteur">
+      <datas xsi:type="yest:ImplementationData" name="Conducteur_bonusMalus" id="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u">
+        <metadata key="KEY" value="VALUE"/>
+      </datas>
+      <datas xsi:type="yest:ImplementationData" name="Conducteur_datePermis" id="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl">
+        <metadata key="KEY" value="VALUE"/>
+      </datas>
+      <datas xsi:type="yest:ImplementationData" name="Conducteur_nom" id="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB">
+        <metadata key="KEY" value="VALUE"/>
+      </datas>
+      <datas xsi:type="yest:ImplementationData" name="Conducteur_codePostal" id="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR">
+        <metadata key="KEY" value="VALUE"/>
+      </datas>
+    </subCategories>
+    <subCategories xsi:type="yest:ImplementationDataCategory" id="nm0C7yE0d4byeiFoB2d626S5ovCT2O0C" name="Devis">
+      <datas xsi:type="yest:ImplementationData" name="Tarif" id="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW">
+        <metadata key="KEY" value="VALUE"/>
+      </datas>
+    </subCategories>
+    <subCategories xsi:type="yest:ImplementationDataCategory" id="QmN1cTnDHrwxaAUSe7gdS6yO0M6TlHsq" name="Véhicule">
+      <datas xsi:type="yest:ImplementationData" name="Vehicule_marque" id="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW">
+        <metadata key="KEY" value="VALUE"/>
+      </datas>
+      <datas xsi:type="yest:ImplementationData" name="Vehicule_annéeMiseEnCirculation" id="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2">
+        <metadata key="KEY" value="VALUE"/>
+      </datas>
+      <datas xsi:type="yest:ImplementationData" name="Vehicule_carburant" id="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b">
+        <metadata key="KEY" value="VALUE"/>
+      </datas>
+      <datas xsi:type="yest:ImplementationData" name="Vehicule_modele" id="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2">
+        <metadata key="KEY" value="VALUE"/>
+      </datas>
+    </subCategories>
+  </implementationDataDictionary>
+  <dataSetCatalog name="#catalog" id="0dnXoo4uhFAWIbB21x9fh1p5P11noeJA">
+    <dataSetCollections name="Jeux de données" id="DWRxMQawS9FCuqeCFzXN0OhPifMdalTc">
+      <dataSets name="Expérimenté_Paris_Malus_TR_308" id="yqjnabrgkzk4XvGzdB0PYdFtadrVCdkK">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Wing Bray"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-5"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="14/09/2021"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75666"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2018"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Peugeot"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="308"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1436.40"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Paris_Malus_TR_308" id="YHERLtv4H7zhYMvS7igpVlJ1617sOpd3">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Nyssa Elliott"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-15"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="11/05/2020"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75323"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2012"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Peugeot"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="308"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1639.44"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Paris_Malus_TR_508 SW" id="QkdHp8vbBbRf2Mw3DeywdZmROqDT5gK9">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Jonas Huber"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-25"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="07/10/2007"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75169"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2018"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Peugeot"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="508 SW"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="2160.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Province_Malus_TR_Class B" id="YZUn9KPtq3AYA1uKlxn6MwyPl6TJpUtG">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Malachi Sears"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-45"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="13/03/2021"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="63126"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2016"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Class B"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="3445.20"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Paris_Bonus_TR_Class C" id="dCDlRsuR6k6duRyN3qOba1x2ZmH5SuXY">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Kameko JoyClass Ce"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="5"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="31/03/1997"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75382"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2001"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Class C"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="2667.60"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Paris_Bonus_TR_Class A" id="KHyDmQYxuo5olDA0RyQgCrOhZ05WbWgY">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Kay Dalton"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="20"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="27/07/2020"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75282"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2013"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Class A"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1900.80"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Paris_Bonus_TR_Berlingo" id="LeSfJWprmxUKYmFUuka2y5EEtrOwGRjw">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Camilla Hutchinson"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="35"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="28/06/1995"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75288"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2017"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Citroën"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Berlingo"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="514.80"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Paris_Bonus_TR_Berlingo" id="bdfmXDIKdMLAv4kOsa8czhNH0bIG8KGg">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Jael Bell"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="50"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="31/05/2020"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75184"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2020"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Citroën"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Berlingo"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="514.80"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Province_Bonus_TR_Class C" id="YtZpPdo8s0NiKBSeRtGblzKkNGBudET7">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Alma Gilmore"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="5"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="26/02/2010"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="57135"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2012"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Class C"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="2451.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Province_Bonus_TR_Class A" id="99xIpR0NAwRqcvtWauNJ0v9AD4OYxFrr">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Roary Williams"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="20"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="30/01/2019"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="35809"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2012"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Class A"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1372.80"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Province_Bonus_TR_508 SW" id="kzDpBkJfwcGCCHNKyT9k0KOEjbgCqYrW">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Tyrone Wong"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="35"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="02/11/1993"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="49855"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2014"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Peugeot"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="508 SW"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="936.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Province_Bonus_TR_Class B" id="ZwX5GYhB6qJtyMln9F4H3yTxKtDACnex">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Conan Dunn"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="50"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="15/12/2018"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="69383"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2014"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Class B"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1254.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Province_Malus_TR_M8" id="PPp08xRm9IX3iAKZpvvnRPTeF8V95ylg">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Jonas Cleveland"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-5"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="24/05/2010"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="35461"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2012"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="BMW"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="M8"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="3780.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Province_Malus_TR_M8" id="nBzolknN35jKAsinzZ5VH5XM03bGDYWy">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Louis Reynolds"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-15"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="08/01/2020"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="41919"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2015"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="BMW"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="M8"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="4250.40"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Paris_Malus_TR_Berlingo" id="tnsVO7vxualYHTb2vIZBCzTID4xXSBOt">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Adam Perez"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-25"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="22/06/1980"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75465"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="1970"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Citroën"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Berlingo"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="810.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Paris_Malus_TR_Berlingo" id="vSUvyDVYuWB5RAA2hpnsPSnhMJdTQuU4">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Nathan Mcdowell"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-45"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="31/08/2018"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75939"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2009"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Citroën"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Berlingo"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1148.40"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Paris_Bonus_TR_DS" id="1A0g5pgjhE9BkHlYlQKvuNtONNt0NjWL">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Amery Randall"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="5"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="06/01/1982"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75054"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="1976"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Citroën"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="DS"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1094.40"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Paris_Bonus_TR_DS" id="edo59bI9931aSXX9VCbWQ2RC1GbMT42I">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Justine Dudley"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="20"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="02/07/2020"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75819"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="1998"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Citroën"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="DS"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1013.76"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Paris_Bonus_TR_205" id="rjdfDPkxroELfVMwdAy3ZEzpziU4INGj">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Davis Morgan"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="35"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="07/02/2003"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75045"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2010"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Peugeot"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="205"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="374.40"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Paris_Bonus_TR_205" id="Pv5ievoZzQJ9wRzFpejYWNvt13SNZoP7">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Tarik Roman"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="50"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="18/11/2019"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75741"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="1972"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Peugeot"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="205"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="316.80"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Paris_Malus_TR_208" id="sg9pmh6yYBw1LL4PoVj6vn2qL7Mp9hYw">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Jackson Gallegos"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-5"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="21/12/1986"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75257"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="1998"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Peugeot"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="208"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1360.80"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Province_Malus_TR_Class B" id="Pf8kOawyZ64MdvWyhDaXuh9plnv5QEI8">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Christian Madden"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-15"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="18/01/2020"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="33801"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="1983"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Class B"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="2580.60"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Province_Malus_TR_Class B" id="ilts4kdmVzS11QZdmKlpM2jki3Nh24ak">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Nigel Acosta"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-25"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="03/12/1972"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="27518"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2010"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Class B"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="2700.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Province_Malus_TR_Class C" id="rO6KgjJGMi8FRv0ZVHjRAjCJTYV7jdu7">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Craig Roy"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-45"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="21/03/2020"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="29482"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="1981"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Class C"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="3828.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Province_Bonus_TR_Class C" id="FlMQmHkwXYMiDNJeWI345chWcZfR9PSj">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Yardley Holman"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="5"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="07/09/2006"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="39680"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2010"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Class C"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="2223.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Province_Bonus_TR_Class A" id="CBRBcdIkffu70U35JCAW8CuLcQU3vsrC">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Dalton Kelly"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="20"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="03/03/2019"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="54626"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="1973"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Class A"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1584.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Province_Bonus_TR_Class A" id="Puff303Kht1C1yqiCc4ZpDa0F4XJzQSZ">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Tiger Gilbert"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="35"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="06/08/1998"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="20324"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="1971"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Class A"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="936.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Province_Bonus_TR_X3" id="AX12iq78bJ6OzIart9DyCjvDaMncwPWO">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Rafael Vinson"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="50"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="12/04/2020"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="36759"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2004"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="BMW"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="X3"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1056.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Paris_Malus_TR_X3" id="rJPwH3hSG9nkE5N7mVkNbWY3HsRAApfA">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Heather Mitchell"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-15"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="02/07/2008"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75540"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="1991"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="BMW"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="X3"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="2616.48"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Paris_Malus_TR_M2" id="XJxKURJ0MYXBFc8tvoT917wNNGtWUbAy">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Aurelia Vaughan"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-5"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="19/07/2005"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75059"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="Nouveau véhicule"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="NA"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="BMW"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="M2"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="2948.40"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Paris_Malus_TR_C1" id="tH0vvYwAlngtt704Psd43hUn6ZH86d7V">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Rudyard Jefferson"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-25"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="08/08/1999"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75080"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="Nouveau véhicule"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="NA"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Citroën"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="C1"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1080.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Paris_Malus_TR_C3" id="RddI5Xj3hZ6nGEEiXwSUUwcbhk9jPEXG">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Callum Hendricks"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-45"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="19/12/2009"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75051"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="Nouveau véhicule"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="NA"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Citroën"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="C3"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1983.60"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Province_Bonus_TR_308" id="xuSyUhU5Yz6Vs6ehGRjKO60kewZJMLjO">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Palmer Harrell"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="5"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="05/04/2013"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="24163"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="Nouveau véhicule"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="NA"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Peugeot"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="308"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1026.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Province_Bonus_TR_308" id="eLG1Nz6VYuG8KyZseXDd3dZwQO2KFsKu">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Callum Henson"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="20"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="21/05/2019"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="43930"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="Nouveau véhicule"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="NA"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Peugeot"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="308"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1161.60"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Province_Bonus_TR_GLA" id="sXXEm7EFAA1jH36ccZexayHPh3WwiLkK">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Ashely Barnes"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="35"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="23/11/1996"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="27036"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="Nouveau véhicule"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="NA"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="GLA"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1638.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Province_Bonus_TR_GLB" id="WPbw7dXJDkhTQO3BdDEApec5GdU0NX1A">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Pamela Hardin"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="50"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="06/04/2020"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="43564"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="Nouveau véhicule"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="NA"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="GLB"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1518.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Province_Malus_TR_GLC" id="4ME6km3GJEhEV27dMHaHm2vxQTcsiZxx">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Neve Norris"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-5"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="29/08/1979"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="39023"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="Nouveau véhicule"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="NA"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="GLC"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="3024.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Paris_Malus_Tiers_M8" id="aecMfQ1kEU7d3y95MFtMJ3WSvkFuhSCj">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Adria Slater"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-15"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="09/09/2020"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75691"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2020"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="BMW"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="M8"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="4554.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Paris_Malus_Tiers_M8" id="QnMmAHqP2e96jQ0uXDfSmeESRNaEgq1A">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Derek Oconnor"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-25"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="18/08/1991"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75734"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2012"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="BMW"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="M8"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="4200.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Paris_Malus_Tiers_Berlingo" id="CRRuTTEK5EgJhvuoSxFvtyT1GNqHlrhJ">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Uma Dyer"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-45"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="29/04/2019"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75142"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2015"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Citroën"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Berlingo"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1052.70"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Paris_Bonus_Tiers_Berlingo" id="KPOnYs6NgzRSDlGfSBRejtgZqdtl5B2m">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Blossom Wooten"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="5"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="16/09/2004"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75210"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2012"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Citroën"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Berlingo"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="741.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Paris_Bonus_Tiers_308" id="IenrVVxrYWudEIx0zlWedaOrzq7zwOv6">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Emi Puckett"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="20"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="21/01/2019"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75577"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2016"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Peugeot"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="308"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1003.20"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Paris_Bonus_Tiers_308" id="DtnVEXuNAgWW014prHKZvlRsdFG0RXTv">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Henry Bowen"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="35"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="13/11/1977"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75404"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2014"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Peugeot"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="308"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="702.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Paris_Bonus_Tiers_508 SW" id="R7mSuAVucdG8f5XHXN8psKeMXzdpETCZ">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Conan Delgado"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="50"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="05/03/2019"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75621"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2015"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Peugeot"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="508 SW"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="792.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Province_Malus_Tiers_508 SW" id="aPac0udAhm2DtLvfsVhBR0kNwAh9xIAk">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Chester Shepard"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-5"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="13/10/2003"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="23239"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2015"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Peugeot"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="508 SW"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1260.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Province_Malus_Tiers_Class B" id="9Snd1rdv8X9ACFKYexbZdi4zhkbbe1LK">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Kieran Lawson"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-15"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="09/03/2018"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="42271"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2019"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Class B"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="2277.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Province_Malus_Tiers_Class B" id="aCQBjTmxrf74VWVyOqDPzQ14W3wvfpz7">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Zeph Rose"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-25"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="16/01/2010"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="72917"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2014"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Class B"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="2375.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Province_Malus_Tiers_Class C" id="y6D2YWSnxAklrZt5hLLTrwk5Ig7Ljd5G">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Zenaida Christian"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-45"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="21/04/2018"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="42441"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2013"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Class C"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="3429.25"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Province_Bonus_Tiers_Class C" id="tMqFjwbJbRPwWIVyes7jHunzgUEYX2GI">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Tobias Sellers"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="5"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="18/08/2014"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="73497"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2015"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Class C"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1947.50"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Province_Bonus_Tiers_Class A" id="Ynn9MDgeopLrZh5rZtDLGdRsw8odV3jw">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Beatrice Glenn"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="20"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="02/05/2021"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="49017"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2015"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Class A"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1320.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Province_Bonus_Tiers_Class A" id="9g23VopXm5YDMJczG05XIYlAYTHFiSfB">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Skyler Vasquez"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="35"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="04/02/1977"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="37632"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2020"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Class A"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="845.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Paris_Bonus_Tiers_DS" id="w6wVaglyYEa8gFHJhC3aKhF4rkupl7pT">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Xanthus Hendrix"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="50"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="30/09/2020"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75464"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2006"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Citroën"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="DS"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="528.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Paris_Malus_Tiers_Class A" id="EC1oZgsGAfSZuY3Rskp0dWpaMFUQ41cy">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Clementine Brewer"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-5"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="03/10/2003"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75701"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="1973"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Class A"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1890.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Paris_Malus_Tiers_Class A" id="e2gx3GDfDJheh7Y865QCT60f201p75Iy">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Hyatt Cantu"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-15"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="29/09/2019"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75316"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2002"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Class A"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1821.60"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Paris_Malus_Tiers_X3" id="P60PHmSOIYi4NjNyxTODUO7QbrkOyooS">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Thor Webster"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-25"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="19/08/1974"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75625"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2004"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="BMW"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="X3"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="2400.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Paris_Malus_Tiers_X3" id="RlxD4ya9t4CqfDM36wGlaySlRhVxPMfw">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Josiah Kidd"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-45"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="26/07/2018"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75343"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="1979"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="BMW"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="X3"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="3024.12"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Paris_Bonus_Tiers_Berlingo" id="ZgnECN6E0fN3Te9n7AdYiPpXzhC9LmW3">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Len Tyler"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="5"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="04/07/1987"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75910"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="1973"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Citroën"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Berlingo"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="513.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Paris_Bonus_Tiers_Berlingo" id="2cdYkPdIemvAWKt6e9HXekkLGvOou6Bn">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Erin Waters"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="20"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="17/03/2020"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75363"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="1979"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Citroën"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Berlingo"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="528.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Province_Bonus_Tiers_DS" id="e7iooh4GdUUl4fYKClijy3YQLoltxmMM">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Remedios Combs"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="35"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="12/05/2005"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="28578"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="1977"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Citroën"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="DS"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="520.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Province_Bonus_Tiers_205" id="p9shmLZfWO8HmVVFRtbXQLpDYVlHWKzz">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Destiny Schroeder"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="50"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="10/05/2020"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="63335"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="2007"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Peugeot"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="205"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="220.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Province_Malus_Tiers_205" id="00XIeI5OyDEvfoH5HyOT1qxiHj7o63rZ">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Hayes Case"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-5"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="01/04/1999"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="73355"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="1976"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Peugeot"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="205"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="420.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Province_Malus_Tiers_208" id="we2YzFBWAojdNMbWEB29NGSE0uUDyjCQ">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Eaton Hall"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-15"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="23/04/2019"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="68899"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="1990"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Peugeot"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="208"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1138.50"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Province_Malus_Tiers_Class B" id="ITJh927HjoxcSwyRrZC5Vomc9kpNbE9n">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Heidi Crosby"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-25"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="04/10/2008"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="62673"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="1993"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Class B"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="2125.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Province_Malus_Tiers_Class B" id="tRphDvvI54N0L1MejF1DaoTs1Xpp3e71">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Kasimir Sutton"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-45"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="03/05/2019"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="63200"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="1981"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Class B"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="2871.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Province_Bonus_Tiers_Class C" id="NrCZEGtXUmHslGrC9mfZ5iNKMMKuhDBu">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Quin Summers"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="5"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="15/06/2011"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="32306"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="1997"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Class C"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1900.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Paris_Bonus_Tiers_Class C" id="rBO8Ztd1PeiZdmCRLiiffM0I80KS1siS">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Tate Clarke"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="50"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="06/03/2019"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75583"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="1978"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="Class C"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1287.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Paris_Malus_Tiers_GLB" id="iBQqqISHw2Qn1hrM9Mmqs8GeZ4oPspnj">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Calvin Russo"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-5"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="23/07/1973"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75768"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="Nouveau véhicule"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="NA"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="GLB"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="2898.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Paris_Bonus_Tiers_C3" id="M6LCEHJ2K4KkKylMJ8Bdh26g75YxhdDP">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Wilma Holman"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="5"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="16/11/2018"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75016"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="Nouveau véhicule"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="NA"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Citroën"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="C3"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1191.30"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Paris_Malus_Tiers_308" id="W7lg6z1KPguDsiiLx0nLXJk6U0YGikUx">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Dexter Olsen"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-5"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="16/03/2000"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="75848"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="Nouveau véhicule"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="NA"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Peugeot"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="308"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1134.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Province_Malus_Tiers_308" id="oDy6GCqu5djj2yzUa4fVROynbDBrFWLy">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Kaitlin Barry"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-15"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="29/12/2019"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="69909"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="Nouveau véhicule"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="NA"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Peugeot"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="308"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1391.50"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Province_Malus_Tiers_GLA" id="bJrWdoS0UduyFYrvV5LF8gxBBy4V3d6Y">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Troy Simpson"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-25"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="28/04/2014"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="22925"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="Nouveau véhicule"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="NA"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="GLA"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="2625.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Province_Malus_Tiers_GLC" id="9yc9rZU0dlblYF5bX9ACFWSgxRPekzfg">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Kaitlin Saunders"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="-45"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="30/01/2020"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="38353"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="Nouveau véhicule"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="NA"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Mercedes Benz"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="GLC"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="3828.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Expérimenté_Province_Bonus_Tiers_M2" id="NEPpKNhnzZLMsuLODkOKaD6AsxxmchNj">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Ashely Lowery"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="20"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="15/09/2001"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="68702"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="Nouveau véhicule"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="NA"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="BMW"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="M2"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Diesel"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="1560.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeune_Province_Bonus_Tiers_C1" id="3rBoBEt5e9WMtoMkANWYOXPW8ZJtOPJp">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value="Leroy Hobbs"/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value="40"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value="23/08/2020"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value="49123"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="Nouveau véhicule"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="NA"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Citroën"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="C1"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value="396.00"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Véhicule non trouvé" id="OpdCT2J0YT371LChiE3s7uK3nfRqm2FM">
+        <values data="cdO9qL8Rr0wWFYkpt7OWVj9QVLZa1jfB" value=""/>
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value=""/>
+        <values data="RmooEYGV4q3HgZUc5A4CgvadVfcKy02u" value=""/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=""/>
+        <values data="tc8jQCQ3e3s3HeGlQPxcqjCLtjoVoMLl" value=""/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value=""/>
+        <values data="goJk4Z2yaovmTrJPS6baDZpjzRjv9yvR" value=""/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="d3LreoXz9hso09dLzRrdrsBZUbGbH6H2" value="1972"/>
+        <values data="RC9a67qu6jM3xjcmm6S06gVQ7uoEFofW" value="Citroën"/>
+        <values data="1E2mWksod72K4TX0XkSgdEw0RhKlQ8W2" value="C3"/>
+        <values data="ezijXoYPah9R6wFaDQZO1SRUc85WvK4b" value="Petrol"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value=""/>
+        <values data="iQD89nMGJw5GS4l2qED6lyycs2sUKqPW" value=""/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="non trouvé"/>
+      </dataSets>
+    </dataSetCollections>
+    <dataSetCollections name="Ensemble de jeux de données" id="f6kWgYflbjb6I1KndEHBhd3wW4f0YgWZ">
+      <dataSets name="Jeu" id="GTh2YscpfGFdH8OUywboUV38cixKHpua">
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="Nouveau véhicule"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeu" id="ko4kW1xZa0TWC0gzUeCcyFxZ5XAZkb8f">
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=">= 3 ans"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeu" id="f8nD3D6Aj8xhbNop0PYfBof5yfpmGfdq">
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Entre 0% et 50% de bonus"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Paris"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance au tiers"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeu" id="kC0Fb4rzXoMM1rxIrCehIoO5xMnPSiCh">
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value="Malus"/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value="Province"/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value="&lt; 3 ans"/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value="Assurance tous risques"/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value="&lt; 10 ans"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="trouvé"/>
+      </dataSets>
+      <dataSets name="Jeu" id="kzzayHY4p2SoZIX80Tlh9SeSDZfxzfGm">
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value=""/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value=""/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=""/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value=""/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=">= 10 ans"/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value="non trouvé"/>
+      </dataSets>
+      <dataSets name="Jeu" id="nrLB9ENDmwFtDamasAaWoEHwxwzQZolM">
+        <values data="M5jWIayGa00tszEdCbUPhD0ziAiO8lpp" value=""/>
+        <values data="c0vhZqJuAC9JANtdx5Cqoejo7aalRoT0" value=""/>
+        <values data="8SPGRL5Hn79NcfO9JVrL2nop5FAHBO1Z" value=""/>
+        <values data="T3UAGkpz6LGrF5hn32W8Kz5H4vp1pwRS" value=""/>
+        <values data="H4OKCeWafRvO5bYWZW7ZieMXBwGV9oRY" value=""/>
+        <values data="1NM2VopaOhGzqQKb5406ubtyavQzJIXJ" value=""/>
+      </dataSets>
+    </dataSetCollections>
+  </dataSetCatalog>
+</yest:Project>
