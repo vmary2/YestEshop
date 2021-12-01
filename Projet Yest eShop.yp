@@ -1330,8 +1330,24 @@
       <combinations dataSets="cjYr4ZXEjqT1O6T2O5MAD9QhRwnthmrT YwWuM9ov0v6l4cEEwTZQgCKLC9zyrj3v" id="jdZfSaoGWaIxdbSXoAs0WPC2Ex3VeBlN"/>
     </dataSetCombinations>
   </testElements>
+  <testElements xsi:type="yest:AutomationConfiguration" id="XIokPWb9t9SirFYHhZfc7eXgsXbEZ3cd" campaign="Bm4hHvtB1D2s1WxnGPjmhTCKclbvfkX1" name="PublicationRobot Framework" publisherId="com.smartesting.publishers.robotframework.RobotframeworkEditor">
+    <parameters name="NewKeywordsList" value="OuvrirNavi"/>
+    <parameters name="RobotPathList" value="D:\Documents\Fac\M1\S7\GL\td_eshop\motClesEshop.robot"/>
+    <operationScripts testOperation="n5KDr6Xnrk0UZoWw61xXZIAYvCPRTUp1">
+      <after/>
+      <body/>
+      <before>
+        <calls keywordId="OuvrirNavi" keywordName="OuvrirNavi" id="qlTTsQ2aKPwITdeH8t0AWj1bXyNb6E5k"/>
+      </before>
+    </operationScripts>
+    <globalBefore>
+      <calls keywordId="OuvrirNavi" keywordName="OuvrirNavi" id="3qzxrhMFhkyzdhjdUUGP8k8KJ0CLxztH"/>
+    </globalBefore>
+    <globalAfter>
+      <calls keywordId="FermerFirefox" keywordName="FermerFirefox" id="XYXsd6S37fJoDOf5Q7d5hRIvxwCKEVZ8"/>
+    </globalAfter>
+  </testElements>
   <designDataDictionary id="BPBDAhV8zIlgIxIAFpm7rwVXpGpQA6ZL" name="#designDataDictionary">
-    <datas xsi:type="yest:DesignData" name="Navigateur" id="5onhhcrooTvVpDSGhCAuS6J20wH9H6vP"/>
     <datas xsi:type="yest:DesignData" name="statut_connexion" id="l20FeIrcIx3e7Kw20KIihBdGP5kgBoXS"/>
     <datas xsi:type="yest:DesignData" name="Compte" id="29rvACRcCeqVORpJGRSOs7iZYWWcywmb"/>
     <datas xsi:type="yest:DesignData" name="taille_nom" id="cUGj1n9cxztqIBd7dNJWILTtz3gs4SxU"/>
@@ -1339,9 +1355,7 @@
     <datas xsi:type="yest:DesignData" name="email" id="jVI2fOcA1fmckzDp5GIqH89Sz6EnORdD"/>
     <datas xsi:type="yest:DesignData" name="taille_telephone" id="hG1E1KeOTF6MpLTQWb0Bvq4pzsujWyBY"/>
     <datas xsi:type="yest:DesignData" name="taille_password" id="Tbzyt0i8oupnDlSEYQ48JzYtyvk8I9zu"/>
-    <datas xsi:type="yest:DesignData" name="mot_de_passe" id="psEZvb5wOVpjEFwDLNWBfRkGGMR0CKna"/>
     <datas xsi:type="yest:DesignData" name="Item" id="xtWv1Qv8OhAdwlSrOlHMLIL5ZUy41eww"/>
-    <datas xsi:type="yest:DesignData" name="connected" id="ANnS9ZCtTd27206HTtIHQiW9k0TShtMa"/>
   </designDataDictionary>
   <implementationDataDictionary id="uUicBNqyqz6YmQ84wQK5n1jeS2X6Z1ss" name="#implementationDataDictionary">
     <datas xsi:type="yest:ImplementationData" name="Email" id="xXhdynU2idE0DI3DqwsdHOTkm5VyfBHM">
@@ -1364,36 +1378,6 @@
     </datas>
   </implementationDataDictionary>
   <dataSetCatalog name="#catalog" id="zjpgQEHv658LCB5JMxNPPUdPWKJYusc5">
-    <dataSetCollections name="Jeu de connexion" id="TY46iRT02Wxj6YMHXuKgld5rKPKbO2oN">
-      <dataSets name="Utilisateur valide" id="kNgYu6a87YpRjuVWdaHgO7eSvUuLCb0u">
-        <values data="jVI2fOcA1fmckzDp5GIqH89Sz6EnORdD" value="valide"/>
-        <values data="xXhdynU2idE0DI3DqwsdHOTkm5VyfBHM" value="pouet.pouet@orange.fr"/>
-        <values data="psEZvb5wOVpjEFwDLNWBfRkGGMR0CKna" value="valide"/>
-        <values data="SXsBeUhcEF5aYGx0DWhgYT8WUVhM0M1g" value="abcd"/>
-        <values data="ANnS9ZCtTd27206HTtIHQiW9k0TShtMa" value="yes"/>
-      </dataSets>
-      <dataSets name="Invalide email" id="xV1P7KDxtMjyLRkIUT6RprDNVcFaC4ha">
-        <values data="jVI2fOcA1fmckzDp5GIqH89Sz6EnORdD" value="invalide"/>
-        <values data="xXhdynU2idE0DI3DqwsdHOTkm5VyfBHM" value="pouet"/>
-        <values data="psEZvb5wOVpjEFwDLNWBfRkGGMR0CKna" value="valide"/>
-        <values data="SXsBeUhcEF5aYGx0DWhgYT8WUVhM0M1g" value="abcd"/>
-        <values data="ANnS9ZCtTd27206HTtIHQiW9k0TShtMa" value="no"/>
-      </dataSets>
-      <dataSets name="Invalide mdp short" id="0FvLdVI3edaLOstDsETX0DT4aCwqvqF8">
-        <values data="jVI2fOcA1fmckzDp5GIqH89Sz6EnORdD" value="valide"/>
-        <values data="xXhdynU2idE0DI3DqwsdHOTkm5VyfBHM" value="pouet.pouet@orange.fr"/>
-        <values data="psEZvb5wOVpjEFwDLNWBfRkGGMR0CKna" value="invalide"/>
-        <values data="SXsBeUhcEF5aYGx0DWhgYT8WUVhM0M1g" value="a"/>
-        <values data="ANnS9ZCtTd27206HTtIHQiW9k0TShtMa" value="no"/>
-      </dataSets>
-      <dataSets name="Invalide mdp long" id="0NxdQ60Ir30NKa3QoKDab0bIRPw5wuY7">
-        <values data="jVI2fOcA1fmckzDp5GIqH89Sz6EnORdD" value="valide"/>
-        <values data="xXhdynU2idE0DI3DqwsdHOTkm5VyfBHM" value="pouet.pouet@orange.fr"/>
-        <values data="psEZvb5wOVpjEFwDLNWBfRkGGMR0CKna" value="invalide"/>
-        <values data="SXsBeUhcEF5aYGx0DWhgYT8WUVhM0M1g" value="abcdefghijklmnopqrstuvwxyz"/>
-        <values data="ANnS9ZCtTd27206HTtIHQiW9k0TShtMa" value="no"/>
-      </dataSets>
-    </dataSetCollections>
     <dataSetCollections name="Jeu d'inscription" id="lXUys5CjATM0ak1kHa9ZkxCGaV9ASS2h">
       <dataSets name="Inscription valide" id="Ids3REAqx54SljYTet6BqFRwUgjAAV99">
         <values data="jVI2fOcA1fmckzDp5GIqH89Sz6EnORdD" value="valide"/>
@@ -1604,17 +1588,6 @@
         <values data="l20FeIrcIx3e7Kw20KIihBdGP5kgBoXS" value="Guest"/>
       </dataSets>
     </dataSetCollections>
-    <dataSetCollections name="Navigateur" id="B3AwWNhcBAF2ddvM5lo9rmdkD0POJ9F4">
-      <dataSets name="Chrome" id="9a16iHDGGytpCmB9D6AAyiDKNJFwRO0M">
-        <values data="5onhhcrooTvVpDSGhCAuS6J20wH9H6vP" value="Chrome"/>
-      </dataSets>
-      <dataSets name="Opera" id="RXe7bxJVb8M79VMBDYas41fYKvKNjFHI">
-        <values data="5onhhcrooTvVpDSGhCAuS6J20wH9H6vP" value="Opera"/>
-      </dataSets>
-      <dataSets name="Firefox" id="Yb1FrdLZyH8UaMEKQIaRYkEEnrRV9WfV">
-        <values data="5onhhcrooTvVpDSGhCAuS6J20wH9H6vP" value="Firefox"/>
-      </dataSets>
-    </dataSetCollections>
     <dataSetCollections name="Jeu d'items" id="fg4j5E0TxmWQFBGthW2yVB4Oi9su6DWu">
       <dataSets name="Macbook" id="M4IT8YmJQlm8kffsw3dH2WAyRHXtVWPu">
         <values data="xtWv1Qv8OhAdwlSrOlHMLIL5ZUy41eww" value="Mac"/>
@@ -1635,72 +1608,6 @@
       <dataSets name="SONY" id="Sfu9JhvnyhZtarKKxTVTbKudinkHmQPe">
         <values data="xtWv1Qv8OhAdwlSrOlHMLIL5ZUy41eww" value="Windows"/>
         <values data="Fgn9e03hx8IMk06oi89YfzsUzYFyHrMs" value="SONY VAIO"/>
-      </dataSets>
-    </dataSetCollections>
-    <dataSetCollections name="email" id="LAxvgq3cJDy6jAd95y7D3LwA1FZSaCLa">
-      <dataSets name="Email valide" id="3bw2FL5sj0eWQyIqdwxTcbtFwLsop16V">
-        <values data="jVI2fOcA1fmckzDp5GIqH89Sz6EnORdD" value="valide"/>
-        <values data="xXhdynU2idE0DI3DqwsdHOTkm5VyfBHM" value="email@gmail.com"/>
-      </dataSets>
-      <dataSets name="email invalide" id="YQRRJL6VogGLvw0hNCZpU5Xdmm2s9eh8">
-        <values data="jVI2fOcA1fmckzDp5GIqH89Sz6EnORdD" value="invalide"/>
-        <values data="xXhdynU2idE0DI3DqwsdHOTkm5VyfBHM" value="email"/>
-      </dataSets>
-    </dataSetCollections>
-    <dataSetCollections name="mdp" id="11SoX7B0h1PydXY3fFEHFxQbU6CiUbuB">
-      <dataSets name="mdp valide" id="ZwJMiIJGFEyAEfJKUC3PS9hSEm9L42CC">
-        <values data="Tbzyt0i8oupnDlSEYQ48JzYtyvk8I9zu" value="correcte"/>
-        <values data="SXsBeUhcEF5aYGx0DWhgYT8WUVhM0M1g" value="1234"/>
-      </dataSets>
-      <dataSets name="mdp trop court" id="wb6GOGSsfgkDLcktWUfhKDUL5eRkoETs">
-        <values data="Tbzyt0i8oupnDlSEYQ48JzYtyvk8I9zu" value="&lt; 4 char"/>
-        <values data="SXsBeUhcEF5aYGx0DWhgYT8WUVhM0M1g" value="123"/>
-      </dataSets>
-      <dataSets name="mdp trop long" id="rPxxqh25KbZs1Ev8STOLCcfOEioV2Li0">
-        <values data="Tbzyt0i8oupnDlSEYQ48JzYtyvk8I9zu" value="> 20 char"/>
-        <values data="SXsBeUhcEF5aYGx0DWhgYT8WUVhM0M1g" value="112212121212121212121211212121212121"/>
-      </dataSets>
-    </dataSetCollections>
-    <dataSetCollections name="nom" id="HMITQ8EISGr9JtSsbqSG8wpiPUX60r9Z">
-      <dataSets name="Nom valide" id="DcYabJ3O6dzpMyIR2QdtJ49u5YyWuAlY">
-        <values data="cUGj1n9cxztqIBd7dNJWILTtz3gs4SxU" value="correcte"/>
-        <values data="VME6R2jB4Zo8QNbNf0OBOEVANv8Jw4Hu" value="lepen"/>
-      </dataSets>
-      <dataSets name="Nom invalide" id="rglFJ633NptuDxqeeqV4LUgYtAX6ZJe7">
-        <values data="cUGj1n9cxztqIBd7dNJWILTtz3gs4SxU" value="&lt; 1 char"/>
-        <values data="VME6R2jB4Zo8QNbNf0OBOEVANv8Jw4Hu" value=""/>
-      </dataSets>
-      <dataSets name="Nom invalide" id="CAAhrLFbKAKIC7vLcz1DyKpiZYzWyYYp">
-        <values data="cUGj1n9cxztqIBd7dNJWILTtz3gs4SxU" value=">32 char"/>
-        <values data="VME6R2jB4Zo8QNbNf0OBOEVANv8Jw4Hu" value="kosciusko-morizet kosciusko-morizet"/>
-      </dataSets>
-    </dataSetCollections>
-    <dataSetCollections name="prénom" id="EhmaPZVYYSCQrZWGQeufDu5yuMcIjczk">
-      <dataSets name="prénom valide" id="aCEZl4WnXfTVjJBxEN5YcBjrWfUQlsT3">
-        <values data="A1moG9NKpu71xq294asS3xuboStyau3a" value="correcte"/>
-        <values data="BlMOw5ttd5uNZs05RmuX3DUuGjLMRThz" value="Jean-Marie"/>
-      </dataSets>
-      <dataSets name="prénom trop long" id="kEZiUDt06XkegeOoLHaHN6ndwTiKTF5a">
-        <values data="A1moG9NKpu71xq294asS3xuboStyau3a" value=">32 char"/>
-        <values data="BlMOw5ttd5uNZs05RmuX3DUuGjLMRThz" value="zeiguhsivbqsoidbvplqsbdvpqbsdvpbqspibvmsdbvlqshjbdvlqhsbdv"/>
-      </dataSets>
-      <dataSets name="prénom trop court" id="ivGwmv1EeUFtkziHnZUKFxn7pbA5yAUm">
-        <values data="A1moG9NKpu71xq294asS3xuboStyau3a" value="&lt; 1 char"/>
-        <values data="BlMOw5ttd5uNZs05RmuX3DUuGjLMRThz" value=""/>
-      </dataSets>
-    </dataSetCollections>
-    <dataSetCollections name="tel" id="n6Mae0OiZ8wXlhMWIMADEyIUzgBB7gYl">
-      <dataSets name="tel trop long" id="LLE9VVG3ZnWbbF3pLKN8xfIoYWzlh5M9">
-        <values data="hG1E1KeOTF6MpLTQWb0Bvq4pzsujWyBY" value=">32 char"/>
-        <values data="UokIK3P36my8ZhIhqhMqcwqMDNtAcGpc" value="31311313132131313213231311313132313133213131"/>
-      </dataSets>
-      <dataSets name="tel trop court" id="pZAgSGQm47wxtFwIFbXYMKSB90ftnMOg">
-        <values data="hG1E1KeOTF6MpLTQWb0Bvq4pzsujWyBY" value="&lt; 3 char"/>
-        <values data="UokIK3P36my8ZhIhqhMqcwqMDNtAcGpc" value="01"/>
-      </dataSets>
-      <dataSets name="tel valide" id="6Z9RCqJykPGhiPDyq1N7FMGuA1bC6eQr">
-        <values data="hG1E1KeOTF6MpLTQWb0Bvq4pzsujWyBY" value="correcte"/>
-        <values data="UokIK3P36my8ZhIhqhMqcwqMDNtAcGpc" value="012345678987"/>
       </dataSets>
     </dataSetCollections>
   </dataSetCatalog>
