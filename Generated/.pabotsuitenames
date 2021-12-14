@@ -1,0 +1,53 @@
+datasources:7fb4dcb1c7fef73c0bcf0ac8de03c8b830eb1c81
+commandlineoptions:65f95c924ba97541f47949701c4e3c51192a5b43
+suitesfrom:no-suites-from-option
+file:5ae566321529b481ce01fe6eed059c353b692609
+--test Generated.To login Refused name long.Inscription Nom long_Macbook_Recherche non trouvée
+--test Generated.To login Refused tel long.Inscription Telephone long_Macbook_Recherche trouvé
+--test Generated.To login SignIn Refused Tel short.Inscription Telephone short_HP_Recherche non trouvée
+--test Generated.To login SignIn Refused first name long.Inscription Prenom long_Macbook_Recherche non trouvée
+--test Generated.To login SignIn Refused first name short.Inscription Prenom short_HP_Recherche non trouvée
+--test Generated.To login SignIn Refused invalid email.Inscription Email short_Macbook_Recherche non trouvée
+--test Generated.To login SignIn Refused invalid email.Inscription Email long_Macbook_Recherche non trouvée
+--test Generated.To login SignIn Refused name short.Inscription Nom short_HP_Recherche non trouvée
+--test Generated.To login SignIn Refused pwd long.Inscription Password long_Macbook_Recherche non trouvée
+--test Generated.To login SignIn Refused pwd short.Inscription Password short_HP_Recherche non trouvée
+--test Generated.To login connect accept 1 product in cart contact support.Inscription valide_Macbook_Recherche non trouvée
+--test Generated.To login connect accept 1 product in cart contact support.Connexion acceptée_Macbook_Recherche non trouvée
+--test Generated.To login connect refuse invalid email.Inscription Email short_HP_Recherche non trouvée
+--test Generated.To login connect refuse invalid email.Connexion mail invalide_HP_Recherche non trouvée
+--test Generated.To login connect refuse pwd long.Inscription Password long_HP_Recherche non trouvée
+--test Generated.To login connect refuse pwd long.Connexion mdp long_HP_Recherche non trouvée
+--test Generated.To login connect refuse pwd short.Inscription Password short_HP_Recherche non trouvée
+--test Generated.To login connect refuse pwd short.Connexion mdp court_HP_Recherche non trouvée
+--test Generated.change cat Tablets prod found.change_cat_Tablets_prod_found
+--test Generated.Add Mac Change quantity pos.Connexion mail invalide_Macbook_Recherche non trouvée
+--test Generated.Add Mac Change quantity pos.Connexion mail invalide_Macbook air_Recherche non trouvée
+--test Generated.Add Mac Change quantity pos.Connexion mail invalide_Macbook pro_Recherche non trouvée
+--test Generated.Add Windows Change quantity neg.Connexion acceptée_HP_Recherche trouvé
+--test Generated.Add Windows Change quantity neg.Connexion acceptée_SONY_Recherche trouvé
+--test Generated.Guest 1 product in cart contact support.Guest_Macbook_Recherche trouvé
+--test Generated.To login 1SignIn Accepted No product in cart pay.Inscription valide_HP_Recherche non trouvée
+--test Generated.To login connect accept 1 product in cart contact support.Inscription valide_Macbook air_Recherche non trouvée
+--test Generated.To login connect accept 1 product in cart contact support.Inscription valide_Macbook pro_Recherche non trouvée
+--test Generated.To login connect accept 1 product in cart contact support.Inscription Nom short_Macbook_Recherche non trouvée
+--test Generated.To login connect accept 1 product in cart contact support.Inscription Nom short_Macbook air_Recherche non trouvée
+--test Generated.To login connect accept 1 product in cart contact support.Inscription Nom short_Macbook pro_Recherche non trouvée
+--test Generated.To login connect accept 1 product in cart contact support.Inscription Nom long_Macbook_Recherche non trouvée
+--test Generated.To login connect accept 1 product in cart contact support.Inscription Nom long_Macbook air_Recherche non trouvée
+--test Generated.To login connect accept 1 product in cart contact support.Inscription Nom long_Macbook pro_Recherche non trouvée
+--test Generated.To login connect accept 1 product in cart contact support.Inscription Prenom short_Macbook_Recherche non trouvée
+--test Generated.To login connect accept 1 product in cart contact support.Inscription Prenom short_Macbook air_Recherche non trouvée
+--test Generated.To login connect accept 1 product in cart contact support.Inscription Prenom short_Macbook pro_Recherche non trouvée
+--test Generated.To login connect accept 1 product in cart contact support.Inscription Prenom long_Macbook_Recherche non trouvée
+--test Generated.To login connect accept 1 product in cart contact support.Inscription Prenom long_Macbook air_Recherche non trouvée
+--test Generated.To login connect accept 1 product in cart contact support.Inscription Prenom long_Macbook pro_Recherche non trouvée
+--test Generated.To login connect accept 1 product in cart contact support.Inscription Telephone short_Macbook_Recherche non trouvée
+--test Generated.To login connect accept 1 product in cart contact support.Inscription Telephone short_Macbook air_Recherche non trouvée
+--test Generated.To login connect accept 1 product in cart contact support.Inscription Telephone short_Macbook pro_Recherche non trouvée
+--test Generated.To login connect accept 1 product in cart contact support.Inscription Telephone long_Macbook_Recherche non trouvée
+--test Generated.To login connect accept 1 product in cart contact support.Inscription Telephone long_Macbook air_Recherche non trouvée
+--test Generated.To login connect accept 1 product in cart contact support.Inscription Telephone long_Macbook pro_Recherche non trouvée
+--test Generated.To login connect accept 1 product in cart contact support.Connexion acceptée_Macbook air_Recherche non trouvée
+--test Generated.To login connect accept 1 product in cart contact support.Connexion acceptée_Macbook pro_Recherche non trouvée
+--test Generated.change cat Cameras prod not found.Connexion acceptée_HP_Recherche non trouvée
